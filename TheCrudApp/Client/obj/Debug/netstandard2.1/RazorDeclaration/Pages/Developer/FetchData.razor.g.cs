@@ -13,70 +13,70 @@ namespace TheCrudApp.Client.Pages.Developer
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 1 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 2 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 3 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 4 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 5 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 6 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 7 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 8 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using TheCrudApp.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 9 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using TheCrudApp.Client.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 10 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using TheCrudApp.Shared.Models;
 
 #line default
@@ -91,7 +91,7 @@ using TheCrudApp.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 51 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\Pages\Developer\FetchData.razor"
+#line 51 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\Pages\Developer\FetchData.razor"
        
     Developer[] developers { get; set; }
     protected override async Task OnInitializedAsync()
@@ -102,12 +102,27 @@ using TheCrudApp.Shared.Models;
     async Task Delete(int developerId)
     {
         var dev = developers.First(x => x.Id == developerId);
-        if (await js.InvokeAsync<bool>("confirm", $"Do you want to delete {dev.FirstName}'s ({dev.Id}) Record?"))
+        var result = await js.InvokeAsync<bool>("swal", new
+        {
+            title = $"Do you want to delete {dev.FirstName}'s ({dev.Id}) Record?",
+            icon = "warning",
+            buttons = new[] { "No", "Yes" },
+            dangerMode = true
+        });
+        if (result)
         {
             await client.DeleteAsync($"api/developer/{developerId}");
             await OnInitializedAsync();
+            await js.InvokeVoidAsync("swal", new
+            {
+                title = "Deleted!",
+                text = $"{dev.FirstName}'s record has been successfully deleted.",
+                icon = "success"
+            });
         }
     }
+
+
 
 #line default
 #line hidden

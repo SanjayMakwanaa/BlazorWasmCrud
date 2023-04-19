@@ -13,70 +13,70 @@ namespace TheCrudApp.Client.Pages.Developer
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 1 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 2 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 3 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 4 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 5 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 6 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 7 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 8 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using TheCrudApp.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 9 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using TheCrudApp.Client.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\_Imports.razor"
+#line 10 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\_Imports.razor"
 using TheCrudApp.Shared.Models;
 
 #line default
@@ -90,11 +90,12 @@ using TheCrudApp.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 45 "C:\Users\TE\Downloads\Sanjay\TheCrudApp\TheCrudApp\Client\Pages\Developer\Form.razor"
+#line 47 "C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\Pages\Developer\Form.razor"
        
     [Parameter] public Developer dev { get; set; }
     [Parameter] public string ButtonText { get; set; } = "Save";
     [Parameter] public EventCallback OnValidSubmit { get; set; }
+    private bool _isCreating => dev == null || dev.Id == default;
 
 #line default
 #line hidden

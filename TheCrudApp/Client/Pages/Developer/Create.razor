@@ -1,5 +1,6 @@
 ﻿@page "/developer/create"
 @inject HttpClient http
+@inject IJSRuntime js
 @inject NavigationManager uriHelper
 
 <h3>Create</h3>
@@ -12,6 +13,7 @@
     async Task CreateDeveloper()
     {
         await http.PostAsJsonAsync("api/developer", dev);
+        await js.InvokeVoidAsync("swal", "Success!", "Developer created successfully.", "success");
         uriHelper.NavigateTo("developer");
     }
 }

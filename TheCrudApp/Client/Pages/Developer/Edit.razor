@@ -19,9 +19,16 @@
 
     async Task EditDeveloper()
     {
-        await http.PutAsJsonAsync("api/developer", dev);
-        await js.InvokeVoidAsync("alert", $"Updated Successfully!");
-        uriHelper.NavigateTo("developer");
-
+        try
+        {
+            await http.PutAsJsonAsync("api/developer", dev);
+            await js.InvokeVoidAsync("swal", "Success", "Updated Successfully!", "success");
+            uriHelper.NavigateTo("developer");
+        }
+        catch (Exception ex)
+        {
+            await js.InvokeVoidAsync("swal", "Error", $"Failed to update developer. Error: {ex.Message}", "error");
+        }
     }
+
 }
