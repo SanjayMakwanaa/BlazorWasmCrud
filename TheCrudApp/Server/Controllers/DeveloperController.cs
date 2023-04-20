@@ -12,6 +12,7 @@ namespace TheCrudApp.Server.Controllers
     public class DeveloperController : ControllerBase
     {
         private readonly ApplicationDBContext _context;
+        /*MySqlConnection connection = new MySqlConnection("Server=localhost;Port=3306;Database=Compnay;Uid=root;Pwd=root;");*/
         public DeveloperController(ApplicationDBContext context)
         {
             this._context = context;

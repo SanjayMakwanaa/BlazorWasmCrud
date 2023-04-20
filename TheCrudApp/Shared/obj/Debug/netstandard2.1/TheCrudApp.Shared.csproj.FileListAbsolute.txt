@@ -18,3 +18,13 @@ C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Shared\obj\Debug\netstandard2.1\The
 C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Shared\obj\Debug\netstandard2.1\TheCrudApp.Shared.csproj.CoreCompileInputs.cache
 C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Shared\obj\Debug\netstandard2.1\TheCrudApp.Shared.dll
 C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Shared\obj\Debug\netstandard2.1\TheCrudApp.Shared.pdb
+C:\Users\TE\Downloads\Sanjay\BlazorCrud\TheCrudApp\Shared\bin\Debug\netstandard2.1\TheCrudApp.Shared.deps.json
+C:\Users\TE\Downloads\Sanjay\BlazorCrud\TheCrudApp\Shared\bin\Debug\netstandard2.1\TheCrudApp.Shared.dll
+C:\Users\TE\Downloads\Sanjay\BlazorCrud\TheCrudApp\Shared\bin\Debug\netstandard2.1\TheCrudApp.Shared.pdb
+C:\Users\TE\Downloads\Sanjay\BlazorCrud\TheCrudApp\Shared\obj\Debug\netstandard2.1\TheCrudApp.Shared.csproj.AssemblyReference.cache
+C:\Users\TE\Downloads\Sanjay\BlazorCrud\TheCrudApp\Shared\obj\Debug\netstandard2.1\TheCrudApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TE\Downloads\Sanjay\BlazorCrud\TheCrudApp\Shared\obj\Debug\netstandard2.1\TheCrudApp.Shared.AssemblyInfoInputs.cache
+C:\Users\TE\Downloads\Sanjay\BlazorCrud\TheCrudApp\Shared\obj\Debug\netstandard2.1\TheCrudApp.Shared.AssemblyInfo.cs
+C:\Users\TE\Downloads\Sanjay\BlazorCrud\TheCrudApp\Shared\obj\Debug\netstandard2.1\TheCrudApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\TE\Downloads\Sanjay\BlazorCrud\TheCrudApp\Shared\obj\Debug\netstandard2.1\TheCrudApp.Shared.dll
+C:\Users\TE\Downloads\Sanjay\BlazorCrud\TheCrudApp\Shared\obj\Debug\netstandard2.1\TheCrudApp.Shared.pdb

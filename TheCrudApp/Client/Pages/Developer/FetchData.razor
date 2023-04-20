@@ -5,13 +5,20 @@
 <h3>Developers Team</h3>
  
 <div class="form-group">
-    <a class="btn btn-success" href="developer/create"><i class="oi oi-outline-plus"></i> Create New</a>
+    <a class="btn btn-outline-success" href="developer/create"><i class="oi oi-outline-plus"></i> Create New</a>
 </div>
 <br>
 
+
+
+
 @if (developers == null)
 {
-    <text>Loading...</text>
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
 }
 else if (developers.Length == 0)
 {
@@ -27,7 +34,7 @@ else
                     <th>Last Name</th>
                     <th>Email</th>
                     <th>Experience (Years)</th>
-                    <th></th>
+                    <th class="ml-5">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -40,8 +47,8 @@ else
                             <td>@dev.Email</td>
                             <td>@dev.Experience</td>
                             <td>
-                                <a class="btn btn-success" href="developer/edit/@dev.Id">Edit</a>
-                                <button class="btn btn-danger" @onclick="@(() => Delete(dev.Id))">Delete</button>
+                                <a class="btn btn-outline-success" href="developer/edit/@dev.Id"><i class="oi oi-pencil"></i></a>
+                                <button class="btn btn-outline-danger ml-5" @onclick="@(() => Delete(dev.Id))"><i class="oi oi-trash"></i></button>
                             </td>
                         </tr>
             }
@@ -49,6 +56,7 @@ else
         </table>
 }
 @code {
+
     Developer[] developers { get; set; }
     protected override async Task OnInitializedAsync()
     {
@@ -77,6 +85,4 @@ else
             });
         }
     }
-
-
 }

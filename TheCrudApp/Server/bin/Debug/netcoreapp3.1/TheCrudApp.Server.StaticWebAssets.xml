@@ -1,4 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\bin\Debug\netstandard2.1\wwwroot\" />
-  <ContentRoot BasePath="/" Path="C:\Users\91908\Desktop\BlazorCrud\TheCrudApp\Client\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\TE\Downloads\Sanjay\BlazorCrud\TheCrudApp\Client\bin\Debug\netstandard2.1\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\TE\Downloads\Sanjay\BlazorCrud\TheCrudApp\Client\wwwroot\" />
 </StaticWebAssets>

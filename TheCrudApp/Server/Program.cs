@@ -22,5 +22,6 @@ namespace TheCrudApp.Server
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
     }
 }

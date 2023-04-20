@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\91908\\Desktop\\BlazorCrud\\TheCrudApp\\Client\\TheCrudApp.Client.csproj": {}
+    "C:\\Users\\TE\\Downloads\\Sanjay\\BlazorCrud\\TheCrudApp\\Client\\TheCrudApp.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\91908\\Desktop\\BlazorCrud\\TheCrudApp\\Client\\TheCrudApp.Client.csproj": {
+    "C:\\Users\\TE\\Downloads\\Sanjay\\BlazorCrud\\TheCrudApp\\Client\\TheCrudApp.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\91908\\Desktop\\BlazorCrud\\TheCrudApp\\Client\\TheCrudApp.Client.csproj",
+        "projectUniqueName": "C:\\Users\\TE\\Downloads\\Sanjay\\BlazorCrud\\TheCrudApp\\Client\\TheCrudApp.Client.csproj",
         "projectName": "TheCrudApp.Client",
-        "projectPath": "C:\\Users\\91908\\Desktop\\BlazorCrud\\TheCrudApp\\Client\\TheCrudApp.Client.csproj",
-        "packagesPath": "C:\\Users\\91908\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\91908\\Desktop\\BlazorCrud\\TheCrudApp\\Client\\obj\\",
+        "projectPath": "C:\\Users\\TE\\Downloads\\Sanjay\\BlazorCrud\\TheCrudApp\\Client\\TheCrudApp.Client.csproj",
+        "packagesPath": "C:\\Users\\TE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TE\\Downloads\\Sanjay\\BlazorCrud\\TheCrudApp\\Client\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\91908\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +31,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\91908\\Desktop\\BlazorCrud\\TheCrudApp\\Shared\\TheCrudApp.Shared.csproj": {
-                "projectPath": "C:\\Users\\91908\\Desktop\\BlazorCrud\\TheCrudApp\\Shared\\TheCrudApp.Shared.csproj"
+              "C:\\Users\\TE\\Downloads\\Sanjay\\BlazorCrud\\TheCrudApp\\Shared\\TheCrudApp.Shared.csproj": {
+                "projectPath": "C:\\Users\\TE\\Downloads\\Sanjay\\BlazorCrud\\TheCrudApp\\Shared\\TheCrudApp.Shared.csproj"
               }
             }
           }
@@ -99,21 +102,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\91908\\Desktop\\BlazorCrud\\TheCrudApp\\Shared\\TheCrudApp.Shared.csproj": {
+    "C:\\Users\\TE\\Downloads\\Sanjay\\BlazorCrud\\TheCrudApp\\Shared\\TheCrudApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\91908\\Desktop\\BlazorCrud\\TheCrudApp\\Shared\\TheCrudApp.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\TE\\Downloads\\Sanjay\\BlazorCrud\\TheCrudApp\\Shared\\TheCrudApp.Shared.csproj",
         "projectName": "TheCrudApp.Shared",
-        "projectPath": "C:\\Users\\91908\\Desktop\\BlazorCrud\\TheCrudApp\\Shared\\TheCrudApp.Shared.csproj",
-        "packagesPath": "C:\\Users\\91908\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\91908\\Desktop\\BlazorCrud\\TheCrudApp\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\TE\\Downloads\\Sanjay\\BlazorCrud\\TheCrudApp\\Shared\\TheCrudApp.Shared.csproj",
+        "packagesPath": "C:\\Users\\TE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TE\\Downloads\\Sanjay\\BlazorCrud\\TheCrudApp\\Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\91908\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,7 +182,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
